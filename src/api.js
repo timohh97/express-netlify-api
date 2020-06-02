@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}));
 
 const router = express.Router()
 
-mongoose.connect(process.env.URL,
+mongoose.connect("mongodb+srv://mainuser:test@cluster-0gtou.mongodb.net/python?retryWrites=true&w=majority",
     { useNewUrlParser: true , useUnifiedTopology: true}, () =>
     {
         console.log("Connected with database successfull!")
